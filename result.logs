@@ -1,0 +1,30 @@
+npm run deploy:program
+
+> hello-solana@1.0.0 deploy:program
+> solana program deploy dist/program/program.so
+
+Program Id: 3A9PqkWcJqYFHZdFw3KhFXvTjtPz8iupzFEwA8Ase9hU
+
+
+solana program show --programs
+
+solana logs |  grep "3A9PqkWcJqYFHZdFw3KhFXvTjtPz8iupzFEwA8Ase9hU invoke" -A 3
+
+npm run start
+
+> hello-solana@1.0.0 start
+> ts-node src/client/main.ts
+
+Launching client...
+programId:  3A9PqkWcJqYFHZdFw3KhFXvTjtPz8iupzFEwA8Ase9hU
+--Pinging Program  3A9PqkWcJqYFHZdFw3KhFXvTjtPz8iupzFEwA8Ase9hU
+
+
+SOLANA LOGs 3A9PqkWcJqYFHZdFw3KhFXvTjtPz8iupzFEwA8Ase9hU
+
+ solana logs |  grep "3A9PqkWcJqYFHZdFw3KhFXvTjtPz8iupzFEwA8Ase9hU invoke" -A 3
+    Program 3A9PqkWcJqYFHZdFw3KhFXvTjtPz8iupzFEwA8Ase9hU invoke [1]
+    Program log: Hello World !!! I am a Solana Program
+    Program 3A9PqkWcJqYFHZdFw3KhFXvTjtPz8iupzFEwA8Ase9hU consumed 376 of 200000 compute units
+    Program 3A9PqkWcJqYFHZdFw3KhFXvTjtPz8iupzFEwA8Ase9hU success
+
