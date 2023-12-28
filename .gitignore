@@ -1,0 +1,9 @@
+*/node_modules/*
+*/release/*
+*/program/*
+*/dist/*
+*/.git/*
+*/.idea/*
+*/.vscode/*
+*/.vs/*
+*/.nyc_output/*
