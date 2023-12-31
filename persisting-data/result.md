@@ -66,12 +66,12 @@ Instructions CreateAccountWithSeed
 Transaction when create Token Account 
 https://solscan.io/tx/5X2N3ZRqgpdPDTHRcebSEeBWuhHaVMDN9A14Y2mMHU3cbM4KuEdckLSyAAMqKGwR9zn5uS73WzZMPXeGSKYrKWHH?cluster=devnet
 
-#1 - Base -37F7w5srJWSCXmkAHnskT5sR1V3ogQYBvEruxERoXgQnicon copyWritableSignerFee Payer
+#1 - Base -37F7w5srJWSCXmkAHnskT5sR1V3ogQYBvEruxERoXgQn  WritableSignerFee Payer
 #2 - Lamports -100000000
-#3 - NewAccount -4u1ebTNicYtmbGZQJez91y2SUowHpgaEtS2ip9mzMakZicon copyWritable
-#4 - Owner -2xvrrzqfDG7AZCbV9kFN9RtESM3W9VJAgkLxLs63T7Fficon copy
+#3 - NewAccount -4u1ebTNicYtmbGZQJez91y2SUowHpgaEtS2ip9mzMakZ  Writable
+#4 - Owner -2xvrrzqfDG7AZCbV9kFN9RtESM3W9VJAgkLxLs63T7Ff  
 #5 - Seed -test1
-#6 - Source -37F7w5srJWSCXmkAHnskT5sR1V3ogQYBvEruxERoXgQnicon copyWritableSignerFee Payer
+#6 - Source -37F7w5srJWSCXmkAHnskT5sR1V3ogQYBvEruxERoXgQn  WritableSignerFee Payer
 #7 - Space -4
 
 Transaction when interact with program sum  (Fee -0.000005 )
@@ -161,3 +161,39 @@ Program log
 > Program log: Current square is now: 1
 > Program 52NNgpJEU98m2s8hXtNaiM7xNsjMbz9zzQJH9oGY6f3K  consumed 14467 of 200000 compute units
 > Program returned success
+
+
+## Check Program Account that i rent
+
+solana account 4u1ebTNicYtmbGZQJez91y2SUowHpgaEtS2ip9mzMakZ
+
+Public Key: 4u1ebTNicYtmbGZQJez91y2SUowHpgaEtS2ip9mzMakZ
+Balance: 0.1 SOL
+Owner: 2xvrrzqfDG7AZCbV9kFN9RtESM3W9VJAgkLxLs63T7Ff
+Executable: false
+Rent Epoch: 18446744073709551615
+Length: 4 (0x4) bytes
+0000:   03 00 00 00                                          ....
+
+
+
+solana account E6HEK3pKVXcyfQQHaSc8vmFR281ykSiW22vywqXm273S
+
+Public Key: E6HEK3pKVXcyfQQHaSc8vmFR281ykSiW22vywqXm273S
+Balance: 0.1 SOL
+Owner: 52NNgpJEU98m2s8hXtNaiM7xNsjMbz9zzQJH9oGY6f3K
+Executable: false
+Rent Epoch: 18446744073709551615
+Length: 4 (0x4) bytes
+0000:   01 00 00 00        
+
+
+
+solana program show --programs
+
+Program Id                                   | Slot      | Authority                                    | Balance
+3A9PqkWcJqYFHZdFw3KhFXvTjtPz8iupzFEwA8Ase9hU | 268581696 | 37F7w5srJWSCXmkAHnskT5sR1V3ogQYBvEruxERoXgQn | 0.28016088 SOL
+2xvrrzqfDG7AZCbV9kFN9RtESM3W9VJAgkLxLs63T7Ff | 269050305 | 37F7w5srJWSCXmkAHnskT5sR1V3ogQYBvEruxERoXgQn | 0.93150552 SOL
+52NNgpJEU98m2s8hXtNaiM7xNsjMbz9zzQJH9oGY6f3K | 269046163 | 37F7w5srJWSCXmkAHnskT5sR1V3ogQYBvEruxERoXgQn | 0.93172824 SOL
+2k5voraZgPfGdh68xELz5axTPkv58i8ekoKW43tMgZAz | 268573495 | 37F7w5srJWSCXmkAHnskT5sR1V3ogQYBvEruxERoXgQn | 0.28016088 SOL
+8HRDws3rbefKkwkSHLsEzUR97cSNFFNfzFUSCwE1ZehU | 269045412 | 37F7w5srJWSCXmkAHnskT5sR1V3ogQYBvEruxERoXgQn | 0.93150552 S
