@@ -11,7 +11,7 @@
         "reset": "./_cicd/cicd.sh reset",
         "build": "./_cicd/cicd.sh build",
         "deploy": "./_cicd/cicd.sh deploy",
-        "reset-and-build": "./_cicd/cicd.sh reset-and-build",
+        "reset-and-build": "chmod +x ./_cicd/cicd.sh && ./_cicd/cicd.sh reset-and-build",
         "simulation": "ts-node ./client/main.ts"
     },
     "dependencies": {
