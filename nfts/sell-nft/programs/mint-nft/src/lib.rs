@@ -7,7 +7,7 @@ use mint::*;
 use sell::*;
 
 
-declare_id!("GREPj1wkRt5dh8NeyFa6AuL8fxsiSVk5eMvKBaW9SbQ3");
+declare_id!("BJKfnpMh2ebHQ7txvVWWpFvVJq75U8NXEMMaTEtftz1u");
 
 
 #[program]

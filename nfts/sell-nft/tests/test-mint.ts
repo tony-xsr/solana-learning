@@ -5,8 +5,8 @@ import { MintNft } from "../target/types/mint_nft";
 
 describe("nft-marketplace", async () => {
   
-  const testNftTitle = "Beta";
-  const testNftSymbol = "BETA";
+  const testNftTitle = "Tony's Test NFT";
+  const testNftSymbol = "TONEYNF";
   const testNftUri = "https://raw.githubusercontent.com/Coding-and-Crypto/Solana-NFT-Marketplace/master/assets/example.json";
 
   const provider = anchor.AnchorProvider.env()
