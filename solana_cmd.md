@@ -20,7 +20,7 @@ solana config set --url http://localhost:8899
 # solana config set wallet
 solana config set --keypair /Users/{YourUsername}/.config/solana/id.json
 solana config set --keypair ./wallets/id.json
-
+/Volumes/CodeSpace/blockchain/solana/solana-learning/wallets/id.json
 
 
 # solana airdrop
